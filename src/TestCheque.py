@@ -67,24 +67,6 @@ class TestCheque(unittest.TestCase):
         print("1000 = " + result)
         self.assertEqual(result, 'mil reais')
         
-    def test_humanize_1234(self):
-        cheque = Cheque(1234.00)
-        result = cheque.humanize()
-        print("1234 = " + result)
-        self.assertEqual(result, 'mil, duzentos e trinta e quatro reais')
-        
-    def test_humanize_1985(self):
-        cheque = Cheque(1985.00)
-        result = cheque.humanize()
-        print("1985 = " + result)
-        self.assertEqual(result, 'mil, novecentos e oitenta e cinco reais')
-        
-    def test_humanize_33450(self):
-        cheque = Cheque(33450.00)
-        result = cheque.humanize()
-        print("33450 = " + result)
-        self.assertEqual(result, 'trinta e tres mil, quatrocentos e cinquenta reais')
-        
     def test_humanize_2_32(self):
         cheque = Cheque(2.32)
         result = cheque.humanize()
@@ -102,7 +84,25 @@ class TestCheque(unittest.TestCase):
         result = cheque.humanize()
         print("3.14 = " + result)
         self.assertEqual(result, 'tres reais e quatorze centavos')
-    
+
+    def test_humanize_1234(self):
+        cheque = Cheque(1234.00)
+        result = cheque.humanize()
+        print("1234 = " + result)
+        self.assertEqual(result, 'mil, duzentos e trinta e quatro reais')
+
+    def test_humanize_1985(self):
+        cheque = Cheque(1985.00)
+        result = cheque.humanize()
+        print("1985 = " + result)
+        self.assertEqual(result, 'mil, novecentos e oitenta e cinco reais')
+        
+    def test_humanize_33450(self):
+        cheque = Cheque(33450.00)
+        result = cheque.humanize()
+        print("33450 = " + result)
+        self.assertEqual(result, 'trinta e tres mil, quatrocentos e cinquenta reais')
+
 if __name__ == '__main__':
     unittest.main()
     
