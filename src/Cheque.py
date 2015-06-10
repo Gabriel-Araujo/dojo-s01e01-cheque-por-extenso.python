@@ -61,13 +61,13 @@ class Cheque:
         tamanho = len(str(valorEntrada))
         
         if tamanho <= 2:
-          return self.humanizedDezena(valorEntrada)
+            return self.humanizedDezena(valorEntrada)
         
         if tamanho == 3:
-          return self.humanizedCentena(valorEntrada)
+            return self.humanizedCentena(valorEntrada)
         
         if tamanho >= 4:
-            parteMilhar = valorEntrada / 1000
+            parteMilhar = int(valorEntrada / 1000)
             parteCentena = valorEntrada % 1000
             humanizedMilhar = (self.convertToExtensive(parteMilhar) + " mil") if parteMilhar != 1 else "mil"
             

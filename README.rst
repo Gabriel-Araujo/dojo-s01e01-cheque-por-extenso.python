@@ -1,3 +1,11 @@
+dojo-s01e01-cheque-por-extenso.python |build-status|
+===============================================
+
+.. |build-status| image:: https://travis-ci.org/leogregianin/dojo-s01e01-cheque-por-extenso.python.svg
+   :target: https://travis-ci.org/leogregianin/dojo-s01e01-cheque-por-extenso.python
+   :alt: Build status
+
+
 # Dojo DevMT S01E01 (Versão em Python) 
 Implementação em python do problema proposto no dojo S01E01 do DevMT
 #### Versão original desenvolvida em C#. [Disponivel aqui](https://github.com/devmatogrosso/dojo-s01e01-cheque-por-extenso)
